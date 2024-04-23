@@ -18,6 +18,7 @@ jobs:
         python -m pip install --upgrade pip wheel
         python -m pip install mypy
     - name: Install packages
+      run: |
         python -m pip install foo/ bar/ bar-stubs/
     - name: Run type check
       run: |
